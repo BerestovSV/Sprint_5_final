@@ -21,5 +21,6 @@ func Info(dataset []string, dp DataParser) {
 			fmt.Println(err)
 		}
 		fmt.Println(result)
+		continue
 	}
 }

@@ -32,10 +32,19 @@ func (ds *DaySteps) Parse(datastring string) (err error) {
 		return errors.New("steps count are in an incorrect format")
 	}
 
+	if ds.Steps <= 0 {
+		return errors.New("steps count must be greater than zero")
+	}
+
 	ds.Duration, err = time.ParseDuration(parsed[1])
 	if err != nil {
 		return errors.New("training duration in an incorrect format")
 	}
+
+	if ds.Duration <= 0 {
+		return errors.New("training duration must be greater than zero")
+	}
+
 	return nil
 }
 
