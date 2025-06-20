@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/Yandex-Practicum/go1fl-sprint5-final/internal/actioninfo"
-	"github.com/Yandex-Practicum/go1fl-sprint5-final/internal/daysteps"
-	"github.com/Yandex-Practicum/go1fl-sprint5-final/internal/personaldata"
-	"github.com/Yandex-Practicum/go1fl-sprint5-final/internal/trainings"
+	"main/internal/actioninfo"
+	"main/internal/daysteps"
+	"main/internal/personaldata"
+	"main/internal/trainings"
 )
 
 func main() {
@@ -37,7 +36,7 @@ func main() {
 
 	actioninfo.Info(input, &daySteps)
 
-	// // тренировки
+	// тренировки
 	actions := []string{
 		"3456,Ходьба,3h00m",
 		"something is wrong",
